@@ -1,0 +1,8 @@
+# Site Cordarte Móveis — vitrine + painel (sem cartão)
+
+1. **Banco:** Cloudflare > Storage & Databases > D1 > Create database `cordarte`. Copie o Database ID. Na aba Console, execute o conteúdo de `schema.sql` e depois o de `seed.sql` (30 produtos de rascunho).
+2. **Configuração:** em `wrangler.toml`, troque `COLE_AQUI_O_ID_DO_BANCO` pelo ID.
+3. **GitHub:** crie um repositório e envie o CONTEÚDO desta pasta.
+4. **Pages:** Workers & Pages > Create > Pages > Connect to Git. Build em branco, saída `public`.
+5. **Senha do painel:** projeto Pages > Settings > Variables and Secrets > crie `ADMIN_PASSWORD` (tipo Secret) com uma senha longa (16+ caracteres). Refaça o deploy.
+6. **Usar:** acesse `seudominio/admin`, entre com a senha, edite os produtos e envie as fotos (ficam guardadas no próprio banco). No Google Search Console, envie `seudominio/sitemap.xml`.
