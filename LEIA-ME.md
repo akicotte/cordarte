@@ -6,3 +6,7 @@
 4. **Pages:** Workers & Pages > Create > Pages > Connect to Git. Build em branco, saída `public`.
 5. **Senha do painel:** projeto Pages > Settings > Variables and Secrets > crie `ADMIN_PASSWORD` (tipo Secret) com uma senha longa (16+ caracteres). Refaça o deploy.
 6. **Usar:** acesse `seudominio/admin`, entre com a senha, edite os produtos e envie as fotos (ficam guardadas no próprio banco). No Google Search Console, envie `seudominio/sitemap.xml`.
+
+## Atualização: categorias e novos campos
+- Banco já existente: rode o `migracao.sql` no Console do D1 (uma vez). Banco novo: o `schema.sql` já traz tudo.
+- No painel: crie as categorias em "Nova categoria" e escolha uma em cada produto. Cada categoria ganha a página `/categoria/nome`.
