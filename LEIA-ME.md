@@ -10,3 +10,7 @@
 ## Atualização: categorias e novos campos
 - Banco já existente: rode o `migracao.sql` no Console do D1 (uma vez). Banco novo: o `schema.sql` já traz tudo.
 - No painel: crie as categorias em "Nova categoria" e escolha uma em cada produto. Cada categoria ganha a página `/categoria/nome`.
+
+## Atualização: frete por estado e peso
+- Banco existente: rode o `migracao2.sql` no Console do D1 (uma vez). Banco novo: `schema.sql` e `seed.sql` já incluem tudo.
+- No painel: "Tabela de frete" (valor base + valor por kg + prazo por estado) e o campo "Peso" em cada produto. Produto sem peso não mostra o cálculo de frete.

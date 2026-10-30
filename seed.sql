@@ -28,3 +28,4 @@ INSERT INTO products(slug,name) VALUES('produto-27','Produto 27');
 INSERT INTO products(slug,name) VALUES('produto-28','Produto 28');
 INSERT INTO products(slug,name) VALUES('produto-29','Produto 29');
 INSERT INTO products(slug,name) VALUES('produto-30','Produto 30');
+INSERT OR IGNORE INTO ship(uf) VALUES('AC'),('AL'),('AP'),('AM'),('BA'),('CE'),('DF'),('ES'),('GO'),('MA'),('MT'),('MS'),('MG'),('PA'),('PB'),('PR'),('PE'),('PI'),('RJ'),('RN'),('RS'),('RO'),('RR'),('SC'),('SP'),('SE'),('TO');
